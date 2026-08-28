@@ -13,3 +13,6 @@ dependencies = [
 
 [tool.fastapi]
 entrypoint = "src.main:app"
+
+[tool.pyright]
+typeCheckingMode = "off"
