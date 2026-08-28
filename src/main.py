@@ -15,7 +15,7 @@ async def query(
     request: EmbeddingRequest
 ):
     llm_service = LLMService()
-    response = llm_service.generate_response(request.text)
+    response = llm_service.genereate_response(request.prompt)
 
     return {
         "message": response
