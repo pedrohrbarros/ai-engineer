@@ -1,0 +1,15 @@
+[project]
+name = "ai-engineer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pedro Barros", email = "phbarros232@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+]
+
+[tool.fastapi]
+entrypoint = "src.main:app"

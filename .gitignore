@@ -1,0 +1,37 @@
+# --- Secrets & environment -------------------------------------------------
+# Real credentials (API keys, tokens, connection strings). Never commit these.
+# .env.example is tracked on purpose as the template — keep it free of real values.
+.env
+.env.*
+!.env.example
+
+# --- Virtual environment ---------------------------------------------------
+# Local interpreter and installed packages. Rebuilt from uv.lock with `uv sync`,
+# so it is machine-specific and must never be committed.
+.venv/
+
+# --- Python bytecode & build artifacts -------------------------------------
+# Compiled bytecode, regenerated automatically on every run.
+__pycache__/
+*.py[cod]
+
+# Output of `uv build` / packaging. Generated, never source.
+build/
+dist/
+*.egg-info/
+
+# --- Tool caches -----------------------------------------------------------
+# Local caches from the test runner, linter and type checkers. Disposable.
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Editors & OS ----------------------------------------------------------
+# Personal editor settings — they belong to the developer, not the project.
+.vscode/
+.idea/
+
+# macOS folder metadata, created by Finder.
+.DS_Store
