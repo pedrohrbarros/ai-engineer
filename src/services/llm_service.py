@@ -8,7 +8,6 @@ class LLMService:
         self.agent = create_agent(
             model="google_genai:gemini-3.5-flash-lite",
             tools=[],
-            verbose=True,
             system_prompt=f"""
                 You are a helpful assistant that will answer questions about BEON.tech's mission using the following knowledge base:
                 {KNOWLEDGE_BASE}
